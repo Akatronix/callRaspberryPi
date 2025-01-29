@@ -17,23 +17,36 @@
   height: 100vh;
 }
 
-/* Video container */
+/* Fullscreen Layout */
 .video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 900px;
-  padding: 10px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Video elements */
-video {
-  width: 45%;
-  max-width: 400px;
-  border-radius: 10px;
-  border: 3px solid #1db954;
-  background: black;
+/* Big Remote Video */
+#remoteVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fullscreen effect */
+    border-radius: 0;
 }
+
+/* Small Local Video (PiP Style) */
+#myVideo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
