@@ -4,8 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+   background-color: #121212;
+}
 .home {
-  background-color: #121212;
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -21,7 +23,7 @@
 .video-container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     overflow: hidden;
     background-color: black;
     display: flex;
@@ -31,8 +33,8 @@
 
 /* Big Remote Video */
 #remoteVideo {
-    width: 100%;
-    height: 100%;
+    width: 900%;
+    height: 80%;
     object-fit: cover; /* Fullscreen effect */
     border-radius: 0;
 }
