@@ -66,8 +66,6 @@
 //     });
 
 
-
-
 const socket = io.connect(window.location.origin);
 
 let myStream;
@@ -209,8 +207,3 @@ document.getElementById("startRecording").addEventListener("click", () => {
 document.getElementById("stopRecording").addEventListener("click", () => {
   stopRecording();
 });
-
-  })
-  .catch((error) => {
-    console.error("Error accessing media devices:", error);
-  });
