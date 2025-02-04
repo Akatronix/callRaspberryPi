@@ -164,8 +164,8 @@ button:disabled {
   #myVideo {
     width: 90px;
     height: 60px;
-    top: 20px;
-    right: 15px;
+    bottom: 10px;
+    right: 10px;
   }
 
   /* Style for buttons in small screens */
